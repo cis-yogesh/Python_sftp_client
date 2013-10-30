@@ -8,6 +8,8 @@ Download and run ./setup.py install
 create a sftp object:
 
 
+
+
 from  django_sftp import Sftp
 
 sftp_obj = Sftp(host, port, user, password)
@@ -15,6 +17,7 @@ sftp_obj = Sftp(host, port, user, password)
 result = sftp_obj.connect()
 
 if result :
+
     sftp_obj.list_dir(path='.') # path is your listing path of os
     
     sftp_obj.current_working_dir() # return current working dir of remote os
