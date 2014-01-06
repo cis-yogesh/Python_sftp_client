@@ -22,7 +22,7 @@ After registration Django Facebook gives you access to user's graph. Allowing fo
 * Finding friends
 * Posting to a users profile
 
-Updates and tutorials can be found on '<http://www.info.com/>`_
+'Updates and tutorials can be found on <http://www.info.com/>`_
 
 
 Features
