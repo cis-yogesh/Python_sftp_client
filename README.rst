@@ -14,15 +14,7 @@ Python SFTP Client enables operate SFTP remote server.
 copy files from remote to local path. get remote file information. manage remote files
 
 
-After registration Django Facebook gives you access to user's graph. Allowing for applications such as:
-
-* Open graph/ Timeline functionality
-* Seamless personalization
-* Inviting friends
-* Finding friends
-* Posting to a users profile
-
-`Updates and tutorials can be found on <http://www.info.com/>`_
+`Updates and tutorials can be found on <http://cis-yogesh.github.io/Python_sftp_client>`_
 
 
 Features
@@ -42,7 +34,7 @@ Documentation
 
 **Basics**
 
-* `Installation <http://django-facebook.readthedocs.org/en/latest/installation.html>`_
+* `Installation <http://cis-yogesh.github.io/Python_sftp_client>`_
 
 
 
