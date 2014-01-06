@@ -1,25 +1,22 @@
-# setup.py file
+#!/usr/bin/env python
 from setuptools import setup, find_packages
 setup(
-    name = "django_sftp",
-    version = "0.1",
-    py_modules = ['django_sftp',],
+    name = "Python sftp",
+    version = "0.2",
+    py_modules = ['sftp',],
 
-    install_requires = ['paramiko>=1.7.4','pysftp>=0.2.2','Django >=1.4'],
+    install_requires = ['paramiko>=1.7.4'],
 
     package_data = {
-        # If any package contains *.txt or *.rst files, include them:
         '': ['README','*.txt', '*.rst'],
     },
-
-    # metadata for upload to PyPI
     author = "yogesh dwivedi",
-    author_email = "yogeshd.mca@gmail.com",
-    description = "Connect django from sftp using paramiko and google sftp module",
+    author_email = "yogesh.p@cisinlabs.com",
+    description = "Python module for SFTP Client",
     license = "BSD",
-    keywords = "django sftp",
+    keywords = "python django sftp ftp",
     url = "",
-    long_description = "Sftp module for Django >1.4",
-    platforms=['any'],
+    long_description = "SFTP Client for Python",
+    platforms=['Linux, Windows'],
     download_url='',
 )
