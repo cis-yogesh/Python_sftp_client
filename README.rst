@@ -1,0 +1,126 @@
+##############################################################################################
+Django Facebook by Thierry Schellenbach (`mellowmorning.com <http://www.mellowmorning.com/>`_)
+##############################################################################################
+
+.. image:: https://secure.travis-ci.org/tschellenbach/Django-facebook.png?branch=master
+
+.. image:: https://pypip.in/d/django-facebook/badge.png
+        :target: https://pypi.python.org/pypi/django-facebook
+
+Contributions are strongly appreciated. Seriously, give github a try, fork and get started :)
+
+News
+----
+* 5.3.0 will be released early December, getting started with Django Facebook will be a lot easier now.
+
+
+Demo & About
+------------
+
+Django Facebook enables your users to easily register using the Facebook API.
+It converts the Facebook user data and creates regular User and Profile objects.
+This makes it easy to integrate with your existing Django application.
+
+I've built it for my startup Fashiolista.com and it's currently used in production with thousands of signups per day.
+For a demo of the signup flow have a look at Fashiolista's landing page (`fashiolista.com <http://www.fashiolista.com/intro_wide_minimal/>`_)
+
+After registration Django Facebook gives you access to user's graph. Allowing for applications such as:
+
+* Open graph/ Timeline functionality
+* Seamless personalization
+* Inviting friends
+* Finding friends
+* Posting to a users profile
+
+Updates and tutorials can be found on my blog `mellowmorning <http://www.mellowmorning.com/>`_
+
+
+Features
+--------
+
+* Access the Facebook API, from:
+   * Your website (Using javascript OAuth)
+   * Facebook canvas pages (For building facebook applications)
+   * Mobile (Or any other flow giving you a valid access token)
+* Django User Registration (Convert Facebook user data into a user model)
+* Store likes, friends and user data locally.
+* Facebook FQL access
+* OAuth 2.0 compliant
+* Automated reauthentication (For expired tokens)
+* Includes Open Facebook (stable and tested Python client to the graph API)
+
+
+Documentation
+-------------
+
+**Basics**
+
+* `Installation <http://django-facebook.readthedocs.org/en/latest/installation.html>`_
+* `Customizing <http://django-facebook.readthedocs.org/en/latest/customizing.html>`_
+* `Settings <http://django-facebook.readthedocs.org/en/latest/settings.html>`_
+* `Registration backends & Redirects <http://django-facebook.readthedocs.org/en/latest/registration_backend.html>`_
+
+**Open Facebook API**
+
+* `Getting an OpenFacebook object <http://django-facebook.readthedocs.org/en/latest/graph.html>`_
+* `Making calls <http://django-facebook.readthedocs.org/en/latest/open_facebook/api.html>`_
+
+**Advanced**
+
+* `Mobile <http://django-facebook.readthedocs.org/en/latest/mobile.html>`_
+* `Celery <http://django-facebook.readthedocs.org/en/latest/celery.html>`_
+* `Signals <http://django-facebook.readthedocs.org/en/latest/signals.html>`_
+* `Canvas <http://django-facebook.readthedocs.org/en/latest/canvas.html>`_
+
+
+Contributing and Running tests
+------------------------------
+Tests are run from within the example project. You
+can run them yourself as follows:
+
+install from git
+
+facebook_example/manage.py test django_facebook
+
+
+**Vagrant**
+
+A vagrant development setup is included in the GIT repo.
+Assuming you have vagrant installed, simply type the following in your shell:
+
+::
+
+    # First get a fresh Django-Facebook checkout
+    git clone git@github.com:tschellenbach/Django-facebook.git django-facebook
+
+    # Go to the directory:
+    cd django-facebook
+
+    # Time to start Vagrant (grab a cup of coffee after this command, it'll take a while) :)
+    vagrant up; vagrant provision
+
+    # Finally done?
+    vagrant ssh
+    python manage.py runserver 0:8000
+
+To have a working Django Facebook example up and running at 192.168.50.42:8000/facebook/example/.
+For the facebook login to work simply map that ip to vagrant.mellowmorning.com
+(Since Facebook checks the domain)
+
+You can run the test suite by typing:
+
+::
+
+  python manage.py test django_facebook
+
+
+
+Django Jobs
+-----------
+Do you also see the beauty in clean code? Are you experienced with high scalability web apps?
+Currently we're looking for additional talent over at our Amsterdam office.
+Feel free to drop me a line at my personal email for more information: thierryschellenbach[at]gmail.com
+
+
+
+
