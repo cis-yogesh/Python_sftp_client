@@ -15,8 +15,8 @@ setup(
     description = "Python module for SFTP Client",
     license = "BSD",
     keywords = "python django sftp ftp",
-    url = "",
+    url = "https://github.com/cis-yogesh/Python_sftp_client",
     long_description = "SFTP Client for Python",
     platforms=['Linux, Windows'],
-    download_url='',
+    download_url='https://github.com/cis-yogesh/Python_sftp_client/tarball/0.2',
 )
