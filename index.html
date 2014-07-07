@@ -74,77 +74,77 @@ $ python setup.py install
 
 <ul>
 <li>create new instance of SFTP remote server</li>
-</ul><pre><code>obj = sftp.Connection(host = hostname,port = port, username = username, password = password)
+</ul><pre><code>c = sftp.Connection(host = hostname,port = port, username = username, password = password)
 </code></pre>
 
 <ul>
 <li>get a list of files for the given path</li>
-</ul><pre><code>obj.listdir(path='.') 
+</ul><pre><code>c.listdir(path='.')
 </code></pre>
 
 <ul>
 <li>change the current working directory on the remote</li>
-</ul><pre><code>obj.chdir(self, path)
+</ul><pre><code>c.chdir(self, path)
 </code></pre>
 
 <ul>
 <li>get the current working directory on the remote</li>
-</ul><pre><code>obj.getcwd()
+</ul><pre><code>c.getcwd()
 </code></pre>
 
 <ul>
 <li>Copies a file between the remote host and the local host</li>
-</ul><pre><code>obj.get(remotepath, localpath = None)
+</ul><pre><code>c.get(remotepath, localpath = None)
 </code></pre>
 
 <ul>
 <li>Copies a file between the local host and the remote host.</li>
-</ul><pre><code>obj.put(localpath, remotepath = None)
+</ul><pre><code>c.put(localpath, remotepath = None)
 </code></pre>
 
 <ul>
 <li>get File size in bytes</li>
-</ul><pre><code>obj.get_file_size(remotepath)
+</ul><pre><code>c.get_file_size(remotepath)
 </code></pre>
 
 <ul>
 <li>Return the File created datetime</li>
-</ul><pre><code>obj.get_file_created_data(remotepath)
+</ul><pre><code>c.get_file_created_data(remotepath)
 </code></pre>
 
 <ul>
 <li>Open given path File and return file object</li>
-</ul><pre><code>obj.open(filename, mode='r', bufsize=-1)
+</ul><pre><code>c.open(filename, mode='r', bufsize=-1)
 </code></pre>
 
 <ul>
 <li>Re-name old name to New name also work for move file</li>
-</ul><pre><code>obj.rename(oldpath, newpath)
+</ul><pre><code>c.rename(oldpath, newpath)
 </code></pre>
 
 <ul>
 <li>Create New dir on given path, as given file permission</li>
-</ul><pre><code>obj.mkdir(path, mode=0777)
+</ul><pre><code>c.mkdir(path, mode=0777)
 </code></pre>
 
 <ul>
 <li>Change the permision of path</li>
-</ul><pre><code>obj.chmod(path, mode)
+</ul><pre><code>c.chmod(path, mode)
 </code></pre>
 
 <ul>
-<li>Remove the given  path directory</li>
-</ul><pre><code>obj.rmdir(path)
+<li>Remove the given path directory</li>
+</ul><pre><code>c.rmdir(path)
 </code></pre>
 
 <ul>
-<li>Remove the given File path</li>
-</ul><pre><code>obj.remove_file(path)
+<li>Remove the given file</li>
+</ul><pre><code>c.remove_file(path)
 </code></pre>
 
 <ul>
 <li>Closes the connection and cleans up</li>
-</ul><pre><code>obj.close()
+</ul><pre><code>c.close()
 </code></pre>
 
 <h3>
